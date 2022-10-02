@@ -1,0 +1,14 @@
+{
+    "name:" "rsschool-Friday_Live_Coding"
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "style": "sass source/stylesheets/index.scss build/stylesheets/index.css",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Lazeta"
+    }
+}
