@@ -6,3 +6,33 @@ body {
   font-size: 1.6rem;
   font-family: "Open Sans", Verdana, sans-serif;
 }
+
+.logo {
+  color: #173A56;
+  height: 28.972801208496094px;
+  width: 147.20635986328125px;
+  left: 165.469970703125px;
+  top: 25px;
+  border-radius: 0px;
+  display: flex;
+  position: absolute;
+  text-decoration: none;
+  
+}
+
+/* # sourceMappingURL=style.css.map */
+
+/* .rectangle {} */
+
+.strategy {} 
+
+.block-shadowed {}
+.block-white {}
+.block-yellow {}
+.block-cover {}
+.block-blue {}
+
+
+.layout-2-column {}
+.layout-3-column {}
+.layout-4-column {}

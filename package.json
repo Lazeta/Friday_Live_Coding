@@ -4,11 +4,17 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "style": "sass source/stylesheets/index.scss build/stylesheets/index.css",
+        "style": "sass scss/style.scss scss/style.css",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Lazeta"
+        "url": "git+https://github.com/Lazeta/Friday_Live_Coding.git"
+    },
+    "author": "Zam",
+    "license": "",
+    "bugs": {
+        "url": "https://github.com/Lazeta/Friday_Live_Coding/issues"
     }
+    
 }
