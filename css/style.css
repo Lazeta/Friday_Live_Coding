@@ -7,32 +7,43 @@ body {
   font-family: "Open Sans", Verdana, sans-serif;
 }
 
-.logo {
-  color: #173A56;
-  height: 28.972801208496094px;
-  width: 147.20635986328125px;
-  left: 165.469970703125px;
-  top: 25px;
-  border-radius: 0px;
-  display: flex;
-  position: absolute;
-  text-decoration: none;
-  
+h1 {
+  font-family: "Poppins", Verdana, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 54px;
 }
 
-/* # sourceMappingURL=style.css.map */
+h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 46px;
+}
 
-/* .rectangle {} */
+h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 34px;
+}
 
-.strategy {} 
+h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+}
 
-.block-shadowed {}
-.block-white {}
-.block-yellow {}
-.block-cover {}
-.block-blue {}
+h5 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+}
 
-
-.layout-2-column {}
-.layout-3-column {}
-.layout-4-column {}
+.wrapper {
+  max-width: 1197px;
+  margin: auto;
+}

@@ -4,7 +4,7 @@
     height: 199.94px;
     left: 0px;
     top: 0px;
-    display: inline-block;
+    display: flex;
 }
 
 .pic2 {
@@ -13,76 +13,127 @@
     height: 199.94px;
     left: 0px;
     top: 0px;
-    display: inline-block;
+    display: flex;
 }
 
 .pic3 {
     background-image: url(/Friday_Live_Coding/img/strategies/pic3.jpg);
+    background-repeat: no-repeat;
     width: 376px;
     height: 199.94px;
     left: 0px;
     top: 0px;
-    display: inline-block;
+    display: flex;
 }
 
 .pic4 {
     background-image: url(/Friday_Live_Coding/img/strategies/pic4.jpg);
+    background-repeat: no-repeat;
     height: 199.9442901611328px;
     width: 787px;
     left: 0px;
-    top: 0px;
+    display: flex;
     display: inline-block;
 }
 
 .pic5 {
     background-image: url(/Friday_Live_Coding/img/strategies/pic5.jpg);
+    background-repeat: no-repeat;
+    width: 787px;
     height: 199.9442901611328px;
-    width: 377px;
-    left: 0px;
-    top: 0px;
-    display: inline-block;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 46.96%;
+    display: flex;
+    border-radius: 8px 8px 0px 0px;
 }
 
 .bitmap_for_logo {
     background-image: url(/Friday_Live_Coding/img/Bitmap_for_logo.png);
-    background-size: 102%;
+    background-repeat: no-repeat;
     height: 32px;
     width: 32.058074951171875px;
     left: 122.03643798828125px;
     top: 22px;
-    border-radius: 0px;
-    display: flex;
+    position: absolute;
+}
+
+.bitmap_for_logo_2 {
+    background-image: url(/Friday_Live_Coding/img/Bitmap_for_logo.png);
+    background-repeat: no-repeat;
+    width: 33.43px;
+    height: 32px;
+    left: 122px;
+    top: 3725px;
     position: absolute;
 }
 
 .image_for_hero {
     background-image: url(/Friday_Live_Coding/img/image_for_hero.svg);
+    background-repeat: no-repeat;
     height: 494.830078125px;
     width: 642.2933349609375px;
     left: 675.7066650390625px;
     top: 108.0006103515625px;
     border-radius: 0px;
     position: absolute;
-    display: flex;
 }
 
 .avatar1 {
-    background-image: url(/Friday_Live_Coding/img/Avatar1.jpg);
-    width: 20px;
-    height: 20px;
-    display: inline-block;
+    background-image: url(/Friday_Live_Coding/img/avatar_1.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 98px;
+    height: 98px;
+    left: 401px;
+    top: 2946px;
+    background-size: 10rem;
+    border-radius: 50%;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
 }
 
-.avatar2 {
+/* .avatar2 {
     background-image: url(/Friday_Live_Coding/img/Avatar2.jpg);
-    width: 20px;
-    height: 20px;
-    display: inline-block;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 98px;
+    height: 98px;
+    left: 811px;
+    top: 2946px;
+
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
 }
 
 .avatar3 {
     background-image: url(/Friday_Live_Coding/img/Avatar3.jpg);
-    width: 20px;
-    height: 20px;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 98px;
+    height: 98px;
+    left: 1220px;
+    top: 2946px;
     display: inline-block;
+
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+} */
+
+.image_logo {
+    background-image: url(/Friday_Live_Coding/img/Productly.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 147.21px;
+    height: 28.97px;
+    Top: 25px;
+    Left: 165.47px;
+}
+
+.image_logo_2 {
+    background-image: url(/Friday_Live_Coding/img/Productly.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 28.97279930114746px;
+    width: 153.50486755371094px;
+    left: 167.2918701171875px;
+    top: 3728px;
 }
