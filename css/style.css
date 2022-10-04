@@ -46,4 +46,17 @@ h5 {
 .wrapper {
   max-width: 1197px;
   margin: auto;
+  position: relative;
 }
+
+.contact-us {
+  background: #FFEEE1;
+}
+
+.mysection {
+  background-color: #F03E3D;
+}
+
+/* .footer {
+  position: fixed;
+} */
