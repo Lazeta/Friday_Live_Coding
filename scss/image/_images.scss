@@ -48,16 +48,13 @@
     border-radius: 8px 8px 0px 0px;
 }
 
-.image_for_hero {
-    background-image: url(/img/image_for_hero.svg);
-    background-repeat: no-repeat;
+.image_for_hero img {
+
     height: 494.830078125px;
     width: 642.2933349609375px;
-    left: 675.7066650390625px;
-    top: 108.0006103515625px;
-    border-radius: 0px;
-    position: absolute;
-    display: flex;
+    // left: 675.7066650390625px;
+    // top: 108.0006103515625px;
+    // border-radius: 0px;
 }
 
 .avatar1 {
@@ -72,39 +69,6 @@
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
 }
 
-.image_logo {
-    background-repeat: no-repeat;
-    width: 190.64px;
-    height: 31.97px;
-    left: 122.04px;
-    top: 22px;
-}
+.logo {}
 
-.image_logo_2 {
-    background-repeat: no-repeat;
-    height: 31.97px;
-    width: 147.21px;
-    left: 122.04px;
-    top: 3728px;
-    padding-top: 1px;
-}
-
-.bitmap__logo {
-    background-repeat: no-repeat;
-    height: 32px;
-    width: 32.058074951171875px;
-    left: 122.03643798828125px;
-    top: 22px;
-    border-radius: 0px;    
-    padding-right: 1.2rem;
-    margin-top: -4px;
-}
-
-.bitmap__logo_2 {
-    background-repeat: no-repeat;
-    width: 33.43px;
-    height: 32px;
-    left: 122px;
-    top: 3725px;
-    padding-right: 1.2rem;
-}
+.logo_2 {}
