@@ -1,3 +1,7 @@
+.logo-path {
+  transition: all 0.3s ease-out;
+}
+
 html {
   font-size: 10px;
 }
@@ -43,126 +47,6 @@ h5 {
   line-height: 26px;
 }
 
-.wrapper {
-  max-width: 1197px;
-  margin: auto;
-}
-
-.header {
-  background: #ffffff;
-  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
-  padding: 15px 0 17px 0;
-}
-
-.header__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 1.5rem;
-  line-height: 2.8rem;
-}
-
-.navigation__link {
-  list-style: none;
-  padding: 0 10px;
-  cursor: pointer;
-}
-
-.contact-us {
-  background: #FFEEE1;
-}
-
-.pic1 {
-  background-image: url(/img/strategies/pic1.jpg);
-  width: 377px;
-  height: 199.94px;
-  left: 0px;
-  top: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.pic2 {
-  background-image: url(/img/strategies/pic2.jpg);
-  width: 376px;
-  height: 199.94px;
-  left: 0px;
-  top: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.pic3 {
-  background-image: url(/img/strategies/pic3.jpg);
-  background-repeat: no-repeat;
-  width: 376px;
-  height: 199.94px;
-  left: 0px;
-  top: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.pic4 {
-  background-image: url(/img/strategies/pic4.jpg);
-  background-repeat: no-repeat;
-  height: 199.9442901611px;
-  width: 787px;
-  left: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.pic5 {
-  background-image: url(/img/strategies/pic5.jpg);
-  background-repeat: no-repeat;
-  width: 787px;
-  height: 199.9442901611px;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 46.96%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-radius: 8px 8px 0px 0px;
-}
-
-.image_for_hero img {
-  height: 494.830078125px;
-  width: 642.2933349609px;
-}
-
-.avatar1 {
-  background-image: url(/img/avatar_1.jpg);
-  background-repeat: no-repeat;
-  width: 98px;
-  height: 98px;
-  left: 401px;
-  top: 2946px;
-  background-size: 10rem;
-  border-radius: 50%;
-  -webkit-box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
-}
-
 .button {
   font-family: "Open Sans", Verdana, sans-serif;
   padding: 11px 25px 13px;
@@ -172,7 +56,6 @@ h5 {
   line-height: 2.2rem;
   border-radius: 4px;
   cursor: pointer;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -202,20 +85,51 @@ h5 {
   border-color: #FF7549;
 }
 
+.logo-svg:hover .logo-path {
+  fill: #FF9900;
+}
+
+.wrapper {
+  max-width: 1197px;
+  margin: auto;
+}
+
+.header {
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 15px 0 17px 0;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+}
+
+.navigation__link {
+  list-style: none;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.contact-us {
+  background: #FFEEE1;
+}
+
 .promo {
   padding: 30px 0;
 }
 
 .promo__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .promo__content {
@@ -225,4 +139,72 @@ h5 {
 .promo__buttons > * {
   margin-right: 44px;
 }
-/* # sourceMappingURL=style.css.map */
+
+.pic1 {
+  background-image: url(/img/strategies/pic1.jpg);
+  width: 377px;
+  height: 199.94px;
+  left: 0px;
+  top: 0px;
+  display: flex;
+}
+
+.pic2 {
+  background-image: url(/img/strategies/pic2.jpg);
+  width: 376px;
+  height: 199.94px;
+  left: 0px;
+  top: 0px;
+  display: flex;
+}
+
+.pic3 {
+  background-image: url(/img/strategies/pic3.jpg);
+  background-repeat: no-repeat;
+  width: 376px;
+  height: 199.94px;
+  left: 0px;
+  top: 0px;
+  display: flex;
+}
+
+.pic4 {
+  background-image: url(/img/strategies/pic4.jpg);
+  background-repeat: no-repeat;
+  height: 199.9442901611px;
+  width: 787px;
+  left: 0px;
+  display: flex;
+}
+
+.pic5 {
+  background-image: url(/img/strategies/pic5.jpg);
+  background-repeat: no-repeat;
+  width: 787px;
+  height: 199.9442901611px;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 46.96%;
+  display: flex;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.image_for_hero img {
+  height: 494.830078125px;
+  width: 642.2933349609px;
+}
+
+.avatar1 {
+  background-image: url(/img/Avatar1.jpg);
+  background-repeat: no-repeat;
+  width: 98px;
+  height: 98px;
+  left: 401px;
+  top: 2946px;
+  background-size: 10rem;
+  border-radius: 50%;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/*# sourceMappingURL=style.css.map */

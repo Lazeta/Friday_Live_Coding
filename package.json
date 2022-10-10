@@ -1,20 +1,25 @@
 {
-    "name:" "rsschool-Friday_Live_Coding"
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "style": "sass scss/style.scss scss/style.css",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Lazeta/Friday_Live_Coding.git"
-    },
-    "author": "Zam",
-    "license": "",
-    "bugs": {
-        "url": "https://github.com/Lazeta/Friday_Live_Coding/issues"
-    }
-    "homepage": "https://github.com/Lazeta/Friday_Live_Coding/readme"
+  "name": "friday_live_coding",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass sass/style.scss sass/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lazeta/Friday_Live_Coding.git"
+  },
+  "author": "Chekh Stanislav jackchekhit2022working@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lazeta/Friday_Live_Coding/issues"
+  },
+  "homepage": "https://github.com/Lazeta/Friday_Live_Coding#readme",
+  "dependencies": {
+    "normalize.scss": "^0.1.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
 }
