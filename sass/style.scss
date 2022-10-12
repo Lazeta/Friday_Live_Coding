@@ -1,5 +1,8 @@
+
+@import "base/normalize";
+
 // Abstract
-// @import "../node_modules/scss/normalize";
+// @import "../node_modules/sass/normalize";
 @import "abstract/constants";
 @import "abstract/mixins";
 @import "abstract/placeholders";
@@ -17,6 +20,7 @@
 // Components
 @import "component/contact-us";
 @import "component/promo";
+@import "component/navigation";
 
 // Image
-@import "image/images";
+// @import "image/images";

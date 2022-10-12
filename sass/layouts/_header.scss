@@ -12,14 +12,6 @@
 
 .header__navigation {}
 
-.navigation {
-    display: flex;
-    font-size: 1.5rem;
-    line-height: 2.8rem;
-}
-
-.navigation__link {
-    list-style: none;
-    padding: 0 10px;
-    cursor: pointer;
+.header__buttons>.button {
+    margin-left: 14px;
 }
