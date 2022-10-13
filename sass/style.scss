@@ -1,4 +1,3 @@
-
 @import "base/normalize";
 
 // Abstract
@@ -11,16 +10,22 @@
 @import "base/base";
 @import "base/buttons";
 @import "base/logo";
+@import "base/icons";
+@import "base/tags";
 
 // Layout
 @import "layouts/wrapper";
 @import "layouts/header";
 @import "layouts/footer";
+@import "layouts/columns";
+@import "layouts/block";
 
 // Components
 @import "component/contact-us";
 @import "component/promo";
 @import "component/navigation";
+@import "component/tools";
+@import "component/strategies";
 
 // Image
-// @import "image/images";
+@import "image/images";

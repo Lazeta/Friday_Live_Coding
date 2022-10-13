@@ -1,0 +1,41 @@
+.strategies {
+    padding: 30 0px;
+}
+
+.strategies__title {
+    margin: 0 0 14px;
+}
+
+.strategies__title h3 {
+    align-items: right;
+}
+
+
+.strategies__description {
+    margin: 0 0 24px;
+}
+
+.strategies__tags {
+    margin-bottom: 31px;
+    padding-left: 47px;
+}
+
+.strategies__tags_1 {
+    
+}
+
+.strategies__wrapper {
+    display: inline-flex;
+    >* {
+        padding-bottom: 30px;
+    }
+}
+
+.strategy__content {
+    padding: 24px 33px 26px 0px;
+}
+
+.strategy__name {
+    margin: 0 0 29px 0px;
+    padding-left: 33px;
+}
