@@ -35,3 +35,23 @@
     width: 12px;
     height: 17px;
 }
+
+.ico__block {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    // padding-top: 10px;
+}
+
+.info {
+    align-items: baseline;
+}
+
+.ico_phone {
+    background-image: url('../img/icons/ico_phone.svg');
+}
+
+.ico_letter {
+    background-image: url('../img/icons/ico_mail.svg');
+    
+}

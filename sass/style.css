@@ -518,6 +518,24 @@ h5 {
   height: 17px;
 }
 
+.ico__block {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+}
+
+.info {
+  align-items: baseline;
+}
+
+.ico_phone {
+  background-image: url("../img/icons/ico_phone.svg");
+}
+
+.ico_letter {
+  background-image: url("../img/icons/ico_mail.svg");
+}
+
 .tags {
   display: flex;
   padding-bottom: 31px;
@@ -608,13 +626,13 @@ h5 {
 }
 
 .contact-us_form input, .contact-us_form textarea {
-  border: none;
+  border: 1px solid #ffffff;
   background-color: #ffffff;
   padding: 10px 21px;
   border-radius: 5px;
 }
 .contact-us_form input:focus, .contact-us_form textarea:focus {
-  border: 1px solid #FF9900;
+  border: #FF9900;
   outline: none;
 }
 .contact-us_form textarea {
