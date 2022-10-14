@@ -1,1 +1,49 @@
+.footer {
+    padding: 60px 0 70px;
+}
+.footer__wrapper {
+    display: flex;
+}
 
+.footer-navigation__column {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 0 20px 0 0;
+    
+}
+
+.footer__navigation {
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.footer-navigation__title {
+    @extend %font-prim;
+    margin: 0px 0px 15px 38px;
+}
+
+.footer-navigation__links {
+    @extend %font-add;
+    list-style: none;
+    
+    a {
+        color: $color-text;
+        @extend %transition;
+        @include font($size: 1.6rem, $height: 3.5rem, $weight: normal);
+        text-decoration: none;
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}
+
+.layout-3-column__footer {
+    @include columns($width: 21%);
+    justify-content: space-evenly;
+    padding-left: 100px;
+}
+
+.layout-4-column__footer {
+    @include columns($width: 21%);
+    justify-content: flex-end;
+}

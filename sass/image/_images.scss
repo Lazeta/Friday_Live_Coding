@@ -1,3 +1,13 @@
+.image_for_hero img {
+    background-image: url(/img/image_for_hero.svg);
+    background-repeat: no-repeat;
+    height: 494.830078125px;
+    width: 642.2933349609375px;
+}
+
+
+
+
 // .pic1 {
 //     background-image: url(/img/strategies/pic1.svg);
 //     width: 377px;
@@ -48,25 +58,13 @@
 //     border-radius: 8px 8px 0px 0px;
 // }
 
-.image_for_hero img {
-    background-image: url(/img/image_for_hero.svg);
-    background-repeat: no-repeat;
-    height: 494.830078125px;
-    width: 642.2933349609375px;
-}
-
-.avatar-1 {
-    background-image: url(/img/avatar_1.jpg);
-    background-repeat: no-repeat;
-    width: 98px;
-    height: 98px;
-    left: 401px;
-    top: 2946px;
-    background-size: 10rem;
-    border-radius: 50%;
-    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
-}
-
-.strategy__image {
-    
-}
+// .avatar {
+//     background-image: url(../img/avatar_1.jpg);
+//     width: 98px;
+//     height: 98px;
+//     margin-left: 350px;
+//     margin-top: -10px;
+//     border-radius: 50%;
+//     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+//     position: absolute;
+// }

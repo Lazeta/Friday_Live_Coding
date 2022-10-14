@@ -1,0 +1,43 @@
+.employee {
+    display: flex;
+    margin-top: 45px;
+    padding: 35px;
+    position: relative;
+    width: calc(30% - 20px)
+}
+
+.employee__content {
+
+}
+
+.employee__title {
+    @include font($size: 1.4rem, $weight: normal);
+}
+
+.employee__name {
+    margin: 0px;
+}
+
+.employee__contact {
+    @include font($size: 1.4rem, $weight: normal);
+    color: $color-link;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.employee_container {
+
+}
+
+.employee__photo {
+    background-image: url(../img/avatar_1.jpg);
+    width: 98px;
+    height: 98px;
+    right: -40px;
+    margin-top: -20px;
+    border-radius: 50%;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+    position: absolute;
+}
