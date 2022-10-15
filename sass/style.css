@@ -484,6 +484,13 @@ h5 {
   color: #FF9900;
   display: inline-flex;
   align-items: center;
+  transition: 0.3s;
+}
+.link-button:hover {
+  color: #F03E3D;
+}
+.link-button:hover .ico_play {
+  background-image: url("../img/icons/play.svg");
 }
 
 .link-button__text {
@@ -563,9 +570,51 @@ h5 {
   background-color: #F5F5F5;
 }
 
+.haburger__line {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background-color: #173A56;
+  border-radius: 5px;
+  height: 3px;
+  width: 100%;
+}
+
+.hamburger {
+  background-image: url("../img/icons/Burger-menu-icon.svg");
+  display: none;
+  position: relative;
+  width: 31px;
+  height: 25px;
+}
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+}
+.hamburger:before {
+  @extent %hamburger-line;
+  top: 0;
+  left: 0;
+}
+.hamburger:after {
+  @extent %hamburger-line;
+  top: 0;
+  left: 0;
+}
+
+.haburger__line {
+  top: calc(50% - 1.5px);
+}
+
 .wrapper {
   max-width: 1197px;
   margin: auto;
+}
+@media (max-width: 1197px) {
+  .wrapper {
+    padding: 0 46px;
+  }
 }
 
 .header {

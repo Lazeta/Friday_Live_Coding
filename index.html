@@ -11,15 +11,22 @@
     <link rel="stylesheet" href="../Friday_Live_Coding/sass/fonts.css">
     <title>Fiday Live Coding</title>
 </head>
+<!-- @@include('_head.html',{
+    "title":"Главная",
+    }) -->
 <body>
 
     <header class="header">
+        <!-- @@include('_header.html',{}) -->
         <div class="wrapper header__wrapper">
+            <link rel="stylesheet" href="_header.html">
+
             <a href="#" class="logo">
                 <object class="logo-object" type="Image/svg+xml" data="./img/logo.svg">
                     Your browser does not support SVG
                 </object>
             </a>
+
             <nav class="header__navigation">
                 <ul class="navigation">
                     <li class="navigation__link">Home</li>
@@ -36,6 +43,7 @@
     </header>
 
     <section class="promo">
+        <!-- @@include('_promo.html',{}) -->
         <div class="wrapper promo__wrapper">
             <div class="promo__content">
                 <h1 class="promo__title">The Design Thinking superpowers</h1>
@@ -56,6 +64,7 @@
     </section>
 
     <section class="tools">
+        <!-- @@include('_tools.html',{}) -->
         <div class="wrapper tools__wrapper">
             <h2 class="tools__title">We design tools to unveil your superpowers</h2>
             <div class="layout-4-column">
@@ -106,6 +115,7 @@
     </section>
 
     <section class="strategies">
+        <!-- @@include('_strategies.html',{}) -->
         <div class="wrapper">
             <h2 class="strategies__title">Marketing strategies</h2>
             <p class="strategies__description">Join 40,000+ other marketers and get proven strategies on email</p>
@@ -230,6 +240,7 @@
     </section>
 
     <section class="about-us">
+        <!-- @@include('_about-us.html',{}) -->
         <div class="wrapper">
             <h2 class="">About Us</h2>
             <p class="">Your About Us page is vital. It’s often the first stop in any user’s journey through a website or blog. It also shouldn’t be their last, because first impressions count online just as much as they do in the real world. If your visitors aren’t impressed, you can expect them to leave without reading your awesome content or completing a conversion action (e.g., signing up for your newsletter, making a purchase).</p>
@@ -244,7 +255,7 @@
                 </div>
             </div>
 
-            <div class="layout-3-column employee_container">
+            <!-- <div class="layout-3-column employee_container">
                 <div class="employee block-shadowed">
                     <div class="employee__content">
                         <img class="employee__photo" src="./img/avatar_1.jpg" alt="avatar"></img>
@@ -264,11 +275,12 @@
                         <a class="employee__contact" href="mailto:uralogow@gmail.com">uralogow@gmail.com</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
     <section class="contact-us">
+        <!-- @@include('_contact-us.html',{}) -->
         <div class="wrapper">
             <h2 class="">Contact Us</h2>
             <div class="layout-2-column">
@@ -299,6 +311,7 @@
     </section>
 
     <footer class="footer">
+        <!-- @@include('_footer.html',{}) -->
         <div class="wrapper footer__wrapper">
             <!-- <a href="#" class="logo"><img src="./img/logo.svg" alt="Productly LCC"></a> -->
             <a href="#" class="logo">
@@ -346,5 +359,7 @@
             </div>
         </div>
     </footer>
+    <!-- @@include('_popup.html',{})
+    @@include('_js.html',{}) -->
 </body>
 </html>
