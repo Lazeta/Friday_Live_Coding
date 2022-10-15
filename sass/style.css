@@ -421,6 +421,14 @@ h1 {
   font-weight: bold;
   line-height: 5.4rem;
 }
+@media (max-width: 414px) {
+  h1 {
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 4.2rem;
+  }
+}
 
 h2 {
   font-size: 3.4rem;
@@ -474,6 +482,7 @@ h5 {
   background: #FF9900;
   color: #ffffff;
   border: 1px solid #FF9900;
+  white-space: nowrap;
 }
 .button_colored:hover {
   background: #FF7549;
@@ -497,8 +506,19 @@ h5 {
   margin-left: 9px;
 }
 
+.logo {
+  display: flex;
+}
+
+.logo-svg {
+  cursor: pointer;
+}
 .logo-svg:hover .logo-path {
   fill: #FF9900;
+}
+
+.logo-object {
+  width: 160px;
 }
 
 .ico {
@@ -576,8 +596,8 @@ h5 {
   position: absolute;
   background-color: #173A56;
   border-radius: 5px;
-  height: 3px;
   width: 100%;
+  height: 3px;
 }
 
 .hamburger {
@@ -586,10 +606,11 @@ h5 {
   position: relative;
   width: 31px;
   height: 25px;
+  margin-right: 37px;
 }
 @media (max-width: 768px) {
   .hamburger {
-    display: block;
+    display: inline-block;
   }
 }
 .hamburger:before {
@@ -605,6 +626,7 @@ h5 {
 
 .haburger__line {
   top: calc(50% - 1.5px);
+  left: 0;
 }
 
 .wrapper {
@@ -615,22 +637,6 @@ h5 {
   .wrapper {
     padding: 0 46px;
   }
-}
-
-.header {
-  background: #ffffff;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
-  padding: 15px 0 17px 0;
-}
-
-.header__wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header__buttons > .button {
-  margin-left: 14px;
 }
 
 .footer {
@@ -765,6 +771,7 @@ h5 {
 
 .promo {
   padding: 30px 0;
+  overflow: hidden;
 }
 
 .promo__wrapper {

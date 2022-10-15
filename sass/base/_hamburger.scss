@@ -4,8 +4,8 @@
     position: absolute;
     background-color: $color-hamburger;
     border-radius: 5px;
-    height: 3px;
     width: 100%;
+    height: 3px;
 }
 
 .hamburger {
@@ -14,8 +14,9 @@
     position: relative;
     width: 31px;
     height: 25px;
+    margin-right: 37px;
     @include media-tablet {
-        display: block;
+        display: inline-block;
     }
     &:before {
         @extent %hamburger-line;
@@ -32,4 +33,5 @@
 .haburger__line {
     @extend %hamburger-line;
     top: calc(50% - 1.5px);
+    left: 0;
 }

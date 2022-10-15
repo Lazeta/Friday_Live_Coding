@@ -1,14 +1,28 @@
+.logo {
+    display: flex;
+}
+
+.logo-2 {
+    
+}
+
 .logo-path {
     @extend %transition;
 }
 
-.logo-svg:hover {
-    .logo-path {
-        fill: $color-primary;
+.logo-svg {
+    cursor: pointer;
+    &:hover {
+        .logo-path {
+            fill: $color-primary;
+        }
     }
+}   
+
+.logo-object {
+    width: 160px;
 }
 
-.logo {}
 .logo-object-2 {}
 
 // <?xml version="1.0" encoding="iso-8859-1"?>

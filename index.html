@@ -19,14 +19,18 @@
     <header class="header">
         <!-- @@include('_header.html',{}) -->
         <div class="wrapper header__wrapper">
-            <link rel="stylesheet" href="_header.html">
-
-            <a href="#" class="logo">
-                <object class="logo-object" type="Image/svg+xml" data="./img/logo.svg">
-                    Your browser does not support SVG
-                </object>
-            </a>
-
+            <!-- <link rel="stylesheet" href="_header.html"> -->
+            <div class="header__logo-line">
+                <span class="hamburger">
+                    <span class="hamburger-line"></span>
+                </span>
+                <a href="#" class="logo">
+                    <object class="logo-object" type="Image/svg+xml" data="./img/logo.svg">
+                        Your browser does not support SVG
+                    </object>
+                </a>
+            </div>
+            
             <nav class="header__navigation">
                 <ul class="navigation">
                     <li class="navigation__link">Home</li>
@@ -314,7 +318,7 @@
         <!-- @@include('_footer.html',{}) -->
         <div class="wrapper footer__wrapper">
             <!-- <a href="#" class="logo"><img src="./img/logo.svg" alt="Productly LCC"></a> -->
-            <a href="#" class="logo">
+            <a href="#" class="logo-2">
                 <object class="logo-object-2" type="Image/svg+xml" data="./img/logo.svg">
                     Your browser does not support SVG
                 </object>
