@@ -18,6 +18,9 @@
 .tools__button {
     margin-top: 60px;
     text-align: center;
+    @include media-mobile {
+        margin-top: 0px;
+    }
 }
 
 
@@ -33,7 +36,13 @@
     @include media-tablet {
         flex-wrap: wrap;
         >.tool {
-            flex-basis: 48%;
+            flex-basis: 43%;
+        }
+    }
+    @include media-mobile {
+        >.tool {
+            flex-basis: 100%;
+            margin-bottom: 47px;
         }
     }
 }

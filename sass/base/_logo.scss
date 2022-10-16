@@ -3,7 +3,6 @@
 }
 
 .logo-2 {
-    
 }
 
 .logo-path {
@@ -21,9 +20,20 @@
 
 .logo-object {
     width: 160px;
+    height: 30px;
+    @include media-tablet {
+        width: 160px;
+        height: 30px;
+    } 
 }
 
-.logo-object-2 {}
+.logo-object-2 {
+    // width: 160px;
+    @include media-tablet {
+        width: 160px;
+        height: 30px;
+    } 
+}
 
 // <?xml version="1.0" encoding="iso-8859-1"?>
 // <?xml-stylesheet type="text/css" href="../css/unicorn.css" ?>
