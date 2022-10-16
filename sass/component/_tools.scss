@@ -7,6 +7,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
 }
+
 .tools__title {
     max-width: 462px;
     margin: auto;
@@ -19,7 +20,24 @@
     text-align: center;
 }
 
+
+
 //tool block
+.tool {
+    @include media-tablet {
+        text-align: center;
+    }
+}
+
+.tool-container {
+    @include media-tablet {
+        flex-wrap: wrap;
+        >.tool {
+            flex-basis: 48%;
+        }
+    }
+}
+
 .tool__icon {
     margin-bottom: 30px;
 }

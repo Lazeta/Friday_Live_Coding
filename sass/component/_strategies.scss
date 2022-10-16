@@ -1,14 +1,17 @@
 .strategies {
     padding: 30 0px;
+    @include media-tablet {
+        text-align: center;
+    }
 }
 
 .strategies__title {
     margin: 0 0 14px;
 }
 
-.strategies__title h3 {
-    align-items: right;
-}
+// .strategies__title h3 {
+//     align-items: right;
+// }
 
 
 .strategies__description {
@@ -17,25 +20,48 @@
 
 .strategies__tags {
     margin-bottom: 31px;
-    padding-left: 47px;
+    // padding-left: 47px;
+    @include media-tablet {
+        justify-content: center;
+    }
 }
 
 .strategies__tags_1 {
     
 }
 
-.strategies__wrapper {
+
+//Strategy
+.strategy {
+    cursor: pointer;
+    @include media-tablet {
+        overflow: hidden;
+    }
+}
+
+.strategy__wrapper {
     display: inline-flex;
     >* {
         padding-bottom: 30px;
+        @include media-tablet {
+            flex-basis: 48%;
+        }
+        @include media-mobile {
+            flex-basis: 100%;
+        }
     }
 }
 
 .strategy__content {
-    padding: 24px 33px 26px 0px;
+    padding: 24px 33px 26px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .strategy__name {
-    margin: 0 0 29px 0px;
-    padding-left: 33px;
+    margin: 0 0 29px;
+    // padding-left: 33px;
+    text-align: left;
+    flex-grow: 1;
 }
