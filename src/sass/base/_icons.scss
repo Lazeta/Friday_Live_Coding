@@ -4,7 +4,7 @@
 }
 
 .ico_play {
-    background-image: url("../img/icons/play.svg");
+    background-image: url("../src/img/icons/play.svg");
     width: 18px;
     height: 19px;
 }
@@ -15,7 +15,7 @@
     border-radius: 19px;
     display: inline-flex;
     align-items: center;
-    justify-content: center;
+    // justify-content: center;
     &_yellow {
         // background-color: $color-yellow;
     }
@@ -31,25 +31,25 @@
 }
 
 .ico_arrow {
-    // background-image: url("../img/icons/icon_1.svg");
+    // background-image: url("../src/img/icons/icon_1.svg");
     width: 12px;
     height: 17px;
 }
 
 .ico_snake {
-    // background-image: url("../img/icons/icon_1.svg");
+    // background-image: url("../src/img/icons/icon_1.svg");
     width: 12px;
     height: 17px;
 }
 
 .ico_heart {
-    // background-image: url("../img/icons/icon_1.svg");
+    // background-image: url("../src/img/icons/icon_1.svg");
     width: 12px;
     height: 17px;
 }
 
 .ico_clock {
-    // background-image: url("../img/icons/icon_1.svg");
+    // background-image: url("../src/img/icons/icon_1.svg");
     width: 12px;
     height: 17px;
 }
@@ -66,10 +66,10 @@
 }
 
 .ico_phone {
-    background-image: url('../img/icons/ico_phone.svg');
+    background-image: url('../src/img/icons/ico_phone.svg');
 }
 
 .ico_letter {
-    background-image: url('../img/icons/ico_mail.svg');
+    background-image: url('../src/img/icons/ico_mail.svg');
     
 }

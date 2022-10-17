@@ -24,9 +24,9 @@
 }
 
 @mixin media-mobile {
-    @media (max-width: $big-width) { @content; }
+    @media (max-width: $mobile-big-width) { @content; }
 }
 
 @mixin media-mobile-small {
-    @media (max-width: $small-width) { @content; }
+    @media (max-width: $mobile-small-width) { @content; }
 }

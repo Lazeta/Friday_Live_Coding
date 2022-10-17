@@ -2,12 +2,15 @@
     background: $color-light;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
     padding: 15px 0px 17px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    // display: flex; 
+    // align-items: center;
+    // justify-content: space-between;
 }
 
 .header__wrapper {
+    display: flex; //перенёс с header в header__wrapper
+    align-items: center; //перенёс с header в header__wrapper
+    justify-content: space-between; //перенёс с header в header__wrapper
     @include media-tablet {
         padding-left: 24px;
     }
@@ -30,6 +33,7 @@
 }
 
 .header__logo-line {
+    display: flex;
     @include media-tablet {
         display: flex;
     }

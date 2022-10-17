@@ -392,7 +392,7 @@ section, main, footer, header, article {
   box-sizing: border-box;
 }
 
-.navigation__link, .footer-navigation__links a, .logo-path {
+.navigation__link, .footer-navigation__links a, .logo-path, .button {
   transition: all 0.3s ease-out;
 }
 
@@ -482,8 +482,24 @@ h5 {
   line-height: 2.6rem;
 }
 
+.link-button {
+  color: #FF9900;
+  display: inline-flex;
+  align-items: center;
+  transition: 0.3s;
+}
+.link-button:hover {
+  color: #F03E3D;
+}
+.link-button:hover .ico_play {
+  background-image: url("../src/img/icons/play.svg");
+}
+
+.link-button__text {
+  margin-left: 9px;
+}
+
 .button {
-  font-family: "Open Sans", Verdana, sans-serif;
   padding: 11px 25px 13px;
   font-style: normal;
   font-weight: 600;
@@ -491,7 +507,6 @@ h5 {
   line-height: 2.2rem;
   border-radius: 4px;
   cursor: pointer;
-  transition: all 0.3s;
 }
 .button_bordered {
   background: #ffffff;
@@ -506,28 +521,10 @@ h5 {
   background: #FF9900;
   color: #ffffff;
   border: 1px solid #FF9900;
-  white-space: nowrap;
 }
 .button_colored:hover {
   background: #FF7549;
   border-color: #FF7549;
-}
-
-.link-button {
-  color: #FF9900;
-  display: inline-flex;
-  align-items: center;
-  transition: 0.3s;
-}
-.link-button:hover {
-  color: #F03E3D;
-}
-.link-button:hover .ico_play {
-  background-image: url("../img/icons/play.svg");
-}
-
-.link-button__text {
-  margin-left: 9px;
 }
 
 .logo {
@@ -536,6 +533,7 @@ h5 {
 
 .logo-svg {
   cursor: pointer;
+  padding-left: 1px;
 }
 .logo-svg:hover .logo-path {
   fill: #FF9900;
@@ -565,7 +563,7 @@ h5 {
 }
 
 .ico_play {
-  background-image: url("../img/icons/play.svg");
+  background-image: url("../src/img/icons/play.svg");
   width: 18px;
   height: 19px;
 }
@@ -576,7 +574,6 @@ h5 {
   border-radius: 19px;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
 }
 .ico_arrow {
   width: 12px;
@@ -605,11 +602,11 @@ h5 {
 }
 
 .ico_phone {
-  background-image: url("../img/icons/ico_phone.svg");
+  background-image: url("../src/img/icons/ico_phone.svg");
 }
 
 .ico_letter {
-  background-image: url("../img/icons/ico_mail.svg");
+  background-image: url("../src/img/icons/ico_mail.svg");
 }
 
 .tags {
@@ -639,7 +636,7 @@ h5 {
   background-color: #F5F5F5;
 }
 
-.haburger__line {
+.hamburger-line, .hamburger:after, .hamburger:before {
   content: "";
   display: inline-block;
   position: absolute;
@@ -650,7 +647,7 @@ h5 {
 }
 
 .hamburger {
-  display: none;
+  display: inline-block;
   position: relative;
   width: 31px;
   height: 25px;
@@ -662,17 +659,15 @@ h5 {
   }
 }
 .hamburger:before {
-  @extent %hamburger-line;
   top: 0;
   left: 0;
 }
 .hamburger:after {
-  @extent %hamburger-line;
   top: 0;
   left: 0;
 }
 
-.haburger__line {
+.hamburger-line {
   top: calc(50% - 1.5px);
   left: 0;
 }
@@ -689,6 +684,43 @@ h5 {
 @media (max-width: 414px) {
   .wrapper {
     padding: 0 21px;
+  }
+}
+.header {
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  padding: 15px 0px 17px 0px;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .header__wrapper {
+    padding-left: 24px;
+  }
+}
+
+.header__buttons > .button {
+  margin-left: 14px;
+}
+.header__buttons > .button:first-child {
+  margin-left: 14px;
+}
+@media (max-width: 414px) {
+  .header__buttons {
+    display: none;
+  }
+}
+
+.header__logo-line {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .header__logo-line {
+    display: flex;
   }
 }
 
@@ -1002,7 +1034,7 @@ h5 {
 
 .tools__wrapper {
   padding-bottom: 90px;
-  background-image: url("../img/backgrounds/tools-bg.svg");
+  background-image: url("../src/img/backgrounds/tools-bg.svg");
   background-position: center bottom;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -1151,7 +1183,7 @@ h5 {
 }
 
 .employee__photo {
-  background-image: url(../img/avatar_1.jpg);
+  background-image: url(../src/img/avatar_1.jpg);
   width: 98px;
   height: 98px;
   right: -40px;
@@ -1171,13 +1203,6 @@ h5 {
 
 .about-us__description {
   margin: 0 0 45px;
-}
-
-.image_for_hero img {
-  background-image: url(/img/image_for_hero.svg);
-  background-repeat: no-repeat;
-  height: 494.830078125px;
-  width: 642.2933349609px;
 }
 
 /*# sourceMappingURL=style.css.map */

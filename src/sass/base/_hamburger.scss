@@ -9,28 +9,28 @@
 }
 
 .hamburger {
-    // background-image: url("../img/icons/Burger-menu-icon.svg");
-    display: none;
+    // background-image: url("../src/img/icons/Burger-menu-icon.svg");
+    display: inline-block; //изменил none на inline-block
     position: relative;
     width: 31px;
-    height: 25px;
+    height: 25px; //изменил размер с 25px на 31px
     margin-right: 37px;
     @include media-tablet {
         display: inline-block;
     }
     &:before {
-        @extent %hamburger-line;
+        @extend %hamburger-line; //тут была ошибка @extent
         top: 0;
         left: 0;
     }
     &:after {
-        @extent %hamburger-line;
+        @extend %hamburger-line; //тут была ошибка @extent
         top: 0;
         left: 0;
     }
 }
 
-.haburger__line {
+.hamburger-line { ////тут была ошибка .haburger__line
     @extend %hamburger-line;
     top: calc(50% - 1.5px);
     left: 0;
