@@ -10,7 +10,7 @@
 
 .hamburger {
     // background-image: url("../src/img/icons/Burger-menu-icon.svg");
-    display: inline-block; //изменил none на inline-block
+    display: none; //изменил none на inline-block
     position: relative;
     width: 31px;
     height: 25px; //изменил размер с 25px на 31px
@@ -25,7 +25,7 @@
     }
     &:after {
         @extend %hamburger-line; //тут была ошибка @extent
-        top: 0;
+        bottom: 0; 
         left: 0;
     }
 }

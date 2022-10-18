@@ -16,10 +16,6 @@
     }
 }
 
-.header__navigation {
-    
-}
-
 .header__buttons {
     >.button {
         margin-left: 14px;
@@ -37,5 +33,4 @@
     @include media-tablet {
         display: flex;
     }
-    // display: flex;
 }

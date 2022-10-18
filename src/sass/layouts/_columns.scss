@@ -1,11 +1,21 @@
 .layout-4-column {
     @include columns($width: 21%);
+    @include media-tablet {
+        // display: inline-flex;
+    }
 }
 
 .layout-3-column {
     @include columns($width: 30%);
+    @include media-tablet {
+        // display: inline-flex;
+        
+    }
 }
 
 .layout-2-column {
     @include columns($width: 48%);
+    @include media-tablet {
+        // display: inline-flex;
+    }
 }

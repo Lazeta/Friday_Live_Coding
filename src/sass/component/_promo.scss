@@ -1,6 +1,9 @@
 .promo {
     padding: 30px 0;
     overflow: hidden;
+    @include media-mobile {
+        max-width: 375px;
+    }
 }
 
 .promo__wrapper {
@@ -8,6 +11,9 @@
     justify-content: space-between;
     align-items: center;
     @include media-tablet {
+        flex-direction: none;
+    }
+    @include media-mobile {
         flex-direction: column-reverse;
     }
 }
@@ -63,11 +69,12 @@
 .image_for_hero {
     @include media-mobile {
         max-width: 100%;
+        margin-bottom: 16px; //добавил по видео
     }
 }
 
 // .image_for_hero img {
-//     background-image: url(/img/image_for_hero.svg);
+//     background-image: url(/src/img/image_for_hero.svg);
 //     background-repeat: no-repeat;
 //     height: 494.830078125px;
 //     width: 642.2933349609375px;

@@ -1,7 +1,7 @@
 .strategies {
     padding: 30 0px;
-    @include media-tablet {
-        text-align: center;
+    @include media-mobile {
+        text-align: left;
     }
 }
 
@@ -9,59 +9,114 @@
     margin: 0 0 14px;
 }
 
-// .strategies__title h3 {
-//     align-items: right;
-// }
-
-
 .strategies__description {
     margin: 0 0 24px;
 }
 
 .strategies__tags {
     margin-bottom: 31px;
-    // padding-left: 47px;
     @include media-tablet {
+
+    }
+    @include media-mobile {
         justify-content: center;
     }
 }
 
-.strategies__tags_1 {
-    
-}
-
-
 //Strategy
 .strategy {
     cursor: pointer;
+    // display: flex;
+    // flex-wrap: wrap;
     @include media-tablet {
         overflow: hidden;
     }
 }
 
 .strategy__wrapper {
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     >* {
         padding-bottom: 30px;
         @include media-tablet {
-            flex-basis: 48%;
+            display: inline-flex;
+            // flex-basis: 48%;
+            box-sizing: none;
+            flex-direction: column;
+            flex-wrap: wrap;
         }
         @include media-mobile {
             flex-basis: 100%;
+            box-sizing: none;
         }
     }
 }
+// .strategy__wrapper_2 {
+//     display: inline-flex;
+//     @include media-tablet {
+//         flex-wrap: wrap;
+//     }
+//     >* {
+//         padding-bottom: 30px;
+//         @include media-tablet {
+//             flex-basis: 48%;
+//             box-sizing: none;
+//         }
+//         @include media-mobile {
+//             flex-basis: 100%;
+//             box-sizing: none;
+//         }
+//     }
+// }
 
 .strategy__content {
     padding: 24px 33px 26px;
     flex-grow: 1;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
+    max-width: fit-content;
+    @include media-tablet {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: fit-content;
+    }
+}
+
+.strategy-shadow {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.strategy-wide {
+    padding-right: 30px;
+    @include media-tablet {
+        padding-right: 0;
+    }
 }
 
 .strategy__name {
     margin: 0 0 29px;
-    // padding-left: 33px;
     text-align: left;
     flex-grow: 1;
+}
+
+.strategy__image {
+    @include media-tablet {
+        object-fit: cover;
+        width: 358px;
+        min-height: 190.42px;
+    }
+}
+.strategy__image_2 {
+    @include media-tablet {
+        object-fit: cover;
+        width: 358px;
+        min-height: 190.42px;
+    }
+    @include media-mobile {
+        object-fit: cover;
+        width: 376px;
+        min-height: 200px;
+    }
 }

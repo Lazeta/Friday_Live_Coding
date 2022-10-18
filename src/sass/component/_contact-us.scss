@@ -18,10 +18,15 @@
 
 .contact-us__content {
     max-width: 520px;
-    @include media-tablet {
-        max-width: 100%;
-        margin-bottom: 52px;
-    }
+    // @include media-tablet {
+    //     max-width: 80%;
+    //     margin-bottom: 52px;
+    //     margin-left: 52px;
+    // }
+    // @include media-mobile {
+    //     max-width: 77%;
+    //     margin-bottom: 52px;
+    // }
 }
 
 .contact-us__text {
@@ -46,6 +51,9 @@
             text-decoration: underline;
         }
     }
+    @include media-mobile {
+
+    }
 }
 
 .contact-us__form {
@@ -63,6 +71,16 @@
         resize: none;
         width: 100%;
         height: 160px;
+    }
+    @include media-tablet {
+        max-width: 85%;
+        margin-bottom: 52px;
+        margin-left: 52px;
+        margin-right: 100px;
+    }
+    @include media-mobile {
+        max-width: 77%;
+        margin-bottom: 52px;
     }
 }
 

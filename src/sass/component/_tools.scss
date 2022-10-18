@@ -1,11 +1,14 @@
-.tools {}
+.tools {
+    @include media-tablet {
+                
+    }
+}
 
 .tools__wrapper {
     padding-bottom: 90px;
     background-image: url("../src/img/backgrounds/tools-bg.svg");
     background-position: center bottom;
     background-size: 100%;
-    background-repeat: no-repeat;
 }
 
 .tools__title {
@@ -34,6 +37,7 @@
 
 .tool-container {
     @include media-tablet {
+        display: flex;
         flex-wrap: wrap;
         >.tool {
             flex-basis: 43%;
