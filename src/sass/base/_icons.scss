@@ -4,7 +4,7 @@
 }
 
 .ico_play {
-    background-image: url("../src/img/icons/play.svg");
+    background-image: url("../img/icons/play.svg");
     width: 18px;
     height: 19px;
 }
@@ -15,7 +15,6 @@
     border-radius: 19px;
     display: inline-flex;
     align-items: center;
-    // justify-content: center;
     &_yellow {
         // background-color: $color-yellow;
     }
@@ -62,14 +61,14 @@
 }
 
 .info {
-    // align-items: baseline;
+    align-items: baseline;
 }
 
 .ico_phone {
-    background-image: url('../src/img/icons/ico_phone.svg');
+    background-image: url("../img/icons/ico_phone.svg");
 }
 
 .ico_letter {
-    background-image: url('../src/img/icons/ico_mail.svg');
+    background-image: url("../img/icons/ico_mail.svg");
     
 }
