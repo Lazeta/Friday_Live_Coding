@@ -1,5 +1,10 @@
 .layout-4-column {
     @include columns($width: 21%);
+    &:after {
+        content: '';
+        width: 21%;
+        display: block;
+    }
     @include media-tablet {
 
     }
@@ -7,6 +12,11 @@
 
 .layout-3-column {
     @include columns($width: 30%);
+    &:after {
+        content: '';
+        width: 30%;
+        display: block;
+    }
     @include media-tablet {
         
     }
@@ -14,6 +24,11 @@
 
 .layout-2-column {
     @include columns($width: 48%);
+    &:after {
+        content: '';
+        width: 48%;
+        display: block;
+    }
     @include media-tablet {
 
     }
