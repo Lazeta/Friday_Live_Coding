@@ -1,6 +1,7 @@
-console.log('Hello Rolling Scopes')
 import { Article } from './js/Article';
+import { ArticleModal } from './js/ArticleModal';
 import { Modal } from './js/Modal';
+
 const data = [
     {
         id: 1,
@@ -28,15 +29,17 @@ const data = [
     }
 ];
 window.onload = function() {
-    console.log('Hello World');
 
     // Render Articles
     if(data) {
-        renderArciclesToDom();
+        renderArticlesToDom();
     }
 
     // Tags
     addTagsClickHandler();
+
+    //Generate Base Modal from Modal Class
+    addToolsClickHandler();
 }
 
 const addTagsClickHandler = () => {
@@ -91,6 +94,8 @@ const renderArciclesToDom = () => {
     generateArticles(data).forEach(article => {
         strategiesWrapper.append(article.generateArticles())
     })
+
+    addStrategyClickHandler();
 }
 
 const getStrategiesWrapper = () => {
@@ -107,6 +112,39 @@ const generateArticles = (data) => {
     return articles;
 }
 
-const generateArcticle = () => {
+const generateArcticle = () => {}
 
+const addToolsClickHandler = () => {
+    document.querySelector('tools__button .button').addEventListener('click', () => {
+        generateToolsModal();
+    })
+}
+
+const generateToolsModal = () => {
+    renderModalWindow('Test content for Tools Modal');
+}
+
+const renderModalWindow = (content) => {
+    let modal = new Modal ('tools-modal');
+    modal.buildModal(content)
+}
+
+const addStrategyClickHandler = () => {
+    document.querySelector('.strategy__wrapper').addEventListener('click', (e) => {
+        if (e.target.closest('.strategy')) {
+            let clickedStrategyId = e.target.closest('.strategy').getAttribute('data-id');
+            let clickedStrategyData = getClickedData(clickedStrategyId);
+
+            renderArticleModalWindow(clickedStrategyData);
+        }
+    })
+}
+
+const getClickedData = (id) => {
+    return data.find(article => article.id == id);
+}
+
+const renderArticleModalWindow = (article) => {
+    let modal = new ArticleModal ('article-modal', article);
+    modal.renderModal();
 }
