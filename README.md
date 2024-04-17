@@ -1,1 +1,1 @@
-https://github.com/Lazeta/Friday_Live_Coding/src/
+https://lazeta.github.io/Friday_Live_Coding/
